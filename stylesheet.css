@@ -86,6 +86,12 @@ header {
     margin: auto;
 }
 
+
+/* 
+Prompt: ik wil een video doen als header hebben met een zwarte overlay er over en ik wil nog naar beneden willen scrollen voor meer content 
+Chat-gpt 4o van lijn 21 tot 24
+*/
+
 .video-container {
     position: fixed;
     top: 0;
@@ -94,7 +100,6 @@ header {
     height: 100vh;
     overflow: hidden;
     z-index: -1;
-    /* Plaats achter de navigatie */
 }
 
 .video-container video {
@@ -103,9 +108,6 @@ header {
     object-fit: cover;
 }
 
-
-/* Donkere overlay */
-
 .video-container .overlay {
     position: absolute;
     top: 0;
@@ -113,9 +115,7 @@ header {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    /* Semi-transparante zwarte overlay */
     z-index: 0;
-    /* Blijft onder de navigatie maar boven de video */
 }
 
 li {
@@ -204,6 +204,7 @@ header .overlay {
 
 .Welkom_bij_BBL {
     width: 1366;
+    margin: auto;
     display: flex;
     align-items: start;
     padding-top: 5em;
