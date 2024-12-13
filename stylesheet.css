@@ -4,18 +4,77 @@
     padding: 0;
 }
 
+body {
+    background-color: #211F1F;
+}
+
+main {
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 10em;
+    padding-bottom: 8em;
+    justify-content: center;
+}
+
 h1 {
+    display: flex;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
-    font-style: italic;
+    font-style: normal;
+    font-size: 96px;
+    padding-bottom: 0.3em;
+    color: #FFFBEF;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
+    font-style: normal;
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 48;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+h4 {
+    color: #F2542D;
+    font-family: "Poppins", sans-serif;
 }
 
 p {
+    font-family: "PT Mono", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+p a {
+    font-family: "PT Mono", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+p a:hover {
+    font-family: "PT Mono", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #F2542D;
+}
+
+a {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -23,28 +82,59 @@ p {
 }
 
 header {
-    width: 80%;
+    width: 1366px;
     margin: auto;
 }
 
-main {
-    width: 80%;
-    margin: auto;
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    /* Plaats achter de navigatie */
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Donkere overlay */
+
+.video-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparante zwarte overlay */
+    z-index: 0;
+    /* Blijft onder de navigatie maar boven de video */
 }
 
 li {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 900;
     font-style: normal;
     font-size: 16px;
 }
 
 nav {
+    position: relative;
     padding-top: 1.5em;
+    z-index: 2;
+    width: 1366px;
 }
 
 nav a {
     text-decoration: none;
+    color: #FFFBEF;
 }
 
 nav ul {
@@ -57,7 +147,250 @@ nav ul {
     align-items: center;
 }
 
+nav a:hover {
+    color: #F2542D;
+}
+
 nav div {
     display: flex;
     gap: 2em;
+}
+
+section .Welkom_bij_BBL {
+    width: 80%;
+    display: flex;
+}
+
+.oranjebutton {
+    background-color: #F2542D;
+    border-radius: 5px;
+    padding: 0.2em 0.8em;
+    color: #FFFBEF;
+    transition: all 300ms;
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+}
+
+.oranjebutton:hover {
+    background-color: #FFFBEF;
+    padding: 0.2em 0.8em;
+    color: #F2542D;
+    transition: all 300ms;
+}
+
+.arrow_right_buttons {
+    padding-left: 2px;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -2;
+}
+
+.Welkom_bij_BBL {
+    width: 1366;
+    display: flex;
+    align-items: start;
+    padding-top: 5em;
+    color: #FFFBEF;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    padding-left: 105px;
+    transform: scale(1);
+}
+
+.populair {
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: start;
+    color: #211F1F;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 1300px;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    color: #FFFBEF;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    background-color: #FFF;
+    border-radius: 20px;
+    padding-left: 48px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
+}
+
+.thumbnails {
+    transform: scale(1.2);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 20px;
+    padding: 0;
+    border-color: #F2542D;
+}
+
+.tekstcardwit {
+    color: #211F1F;
+    padding-right: 48px;
+    padding-left: 48px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: auto;
+}
+
+.ytvideo {
+    display: flex;
+    justify-content: center;
+}
+
+.wie-zijn-wij {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: auto;
+}
+
+.FAQ {
+    width: 1366px;
+    margin: 1em;
+    display: flex;
+    color: #FFFBEF;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #FFFBEF;
+    border-radius: 20px;
+}
+
+.card-usp {
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    color: #FFFBEF;
+    justify-content: center;
+    align-items: top;
+    gap: 119px;
+}
+
+.bg-wit {
+    background-color: #FFFBEF;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-zwart {
+    background-color: #211F1F;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-wit {
+    color: #211F1F;
+}
+
+.text-zwart {
+    color: #FFFBEF;
+}
+
+.buttonsverhaal {
+    display: flex;
+    gap: 48px;
+}
+
+footer {
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    color: #FFFBEF;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #FFFBEF;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 
+Prompt: hoe krijg ik het voor elkaar om als ik over een foto hover dat er een andere naar voor komt in html css?
+Chatgpt-4o tot lijn 388
+*/
+
+.image-container {
+    position: relative;
+    width: 360px;
+    /* Pas aan naar de breedte van je afbeelding */
+    height: 476px;
+    /* Pas aan naar de hoogte van je afbeelding */
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Zorgt ervoor dat de afbeelding goed past */
+    transition: opacity 0.3s ease;
+    /* Maakt een vloeiende overgang */
+}
+
+.image-hover {
+    opacity: 0;
+    /* Verberg de hover afbeelding standaard */
+}
+
+.image-container:hover .image-hover {
+    opacity: 1;
+    /* Toon de hover afbeelding bij hover */
+}
+
+.image-container:hover .image-default {
+    opacity: 0;
+    /* Verberg de standaard afbeelding bij hover */
+}
+
+.over-foto {
+    display: flex;
+    gap: 119px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 16em;
 }
