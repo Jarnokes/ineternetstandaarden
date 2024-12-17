@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    width: 1366px;
+    width: 80vw;
     margin: auto;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@ h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 96px;
+    font-size: 6em;
     padding-bottom: 0.3em;
     color: #FFFBEF;
     justify-content: center;
@@ -34,11 +34,11 @@ h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 64px;
+    font-size: 4em;
 }
 
 h3 {
-    font-size: 48;
+    font-size: 3em;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -53,24 +53,24 @@ p {
     font-family: "PT Mono", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 1em;
+    line-height: 2em;
 }
 
 p a {
     font-family: "PT Mono", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 1em;
+    line-height: 2em;
 }
 
 p a:hover {
     font-family: "PT Mono", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5em;
+    line-height: 3em;
     color: #F2542D;
 }
 
@@ -78,58 +78,32 @@ a {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 header {
-    width: 1366px;
+    width: 80vw;
     margin: auto;
 }
 
 
 /* 
 Prompt: ik wil een video doen als header hebben met een zwarte overlay er over en ik wil nog naar beneden willen scrollen voor meer content 
-Chat-gpt 4o van lijn 21 tot 24
+Chat-gpt 4o van lijn 95 tot 24
 */
-
-.video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.video-container .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-}
 
 li {
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 nav {
     position: relative;
     padding-top: 1.5em;
     z-index: 2;
-    width: 1366px;
+    width: 80vw;
 }
 
 nav a {
@@ -178,9 +152,9 @@ section .Welkom_bij_BBL {
     transition: all 300ms;
 }
 
-.arrow_right_buttons {
-    padding-left: 2px;
-}
+
+/* Hieronder staat nog absolute alleen als ik die weg haal gaat de video van de achtergrond weer terug naar de vorgrond 
+en dat wil ik niet hebben dus vandaar dat ik deze hier heb laten staan zelfde geld voor de overlay */
 
 header video {
     position: absolute;
@@ -203,7 +177,7 @@ header .overlay {
 }
 
 .Welkom_bij_BBL {
-    width: 1366;
+    width: 80vw;
     margin: auto;
     display: flex;
     align-items: start;
@@ -214,12 +188,12 @@ header .overlay {
 }
 
 section img {
-    padding-left: 105px;
+    padding-left: 2em;
     transform: scale(1);
 }
 
 .populair {
-    width: 1366px;
+    width: 80vw;
     margin: auto;
     display: flex;
     align-items: start;
@@ -230,7 +204,7 @@ section img {
 }
 
 .card {
-    width: 1300px;
+    width: 80vw;
     margin: auto;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -241,7 +215,7 @@ section img {
     overflow: hidden;
     background-color: #FFF;
     border-radius: 20px;
-    padding-left: 48px;
+    padding-left: 3em;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
 }
 
@@ -255,10 +229,10 @@ section img {
 
 .tekstcardwit {
     color: #211F1F;
-    padding-right: 48px;
-    padding-left: 48px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-right: 3em;
+    padding-left: 3em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
     margin: auto;
 }
 
@@ -275,7 +249,7 @@ section img {
 }
 
 .FAQ {
-    width: 1366px;
+    width: 80vw;
     margin: 1em;
     display: flex;
     color: #FFFBEF;
@@ -287,13 +261,13 @@ section img {
 }
 
 .card-usp {
-    width: 1366px;
+    width: 80vw;
     margin: auto;
     display: flex;
     color: #FFFBEF;
     justify-content: center;
-    align-items: top;
-    gap: 119px;
+    align-items: center;
+    gap: 2em;
 }
 
 .bg-wit {
@@ -326,11 +300,11 @@ section img {
 
 .buttonsverhaal {
     display: flex;
-    gap: 48px;
+    gap: 3em;
 }
 
 footer {
-    width: 1366px;
+    width: 80vw;
     margin: auto;
     display: flex;
     color: #FFFBEF;
@@ -347,51 +321,6 @@ footer a {
     justify-content: center;
 }
 
-
-/* 
-Prompt: hoe krijg ik het voor elkaar om als ik over een foto hover dat er een andere naar voor komt in html css?
-Chatgpt-4o tot lijn 388
-*/
-
-.image-container {
-    position: relative;
-    width: 360px;
-    /* Pas aan naar de breedte van je afbeelding */
-    height: 476px;
-    /* Pas aan naar de hoogte van je afbeelding */
-}
-
-.image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Zorgt ervoor dat de afbeelding goed past */
-    transition: opacity 0.3s ease;
-    /* Maakt een vloeiende overgang */
-}
-
-.image-hover {
-    opacity: 0;
-    /* Verberg de hover afbeelding standaard */
-}
-
-.image-container:hover .image-hover {
-    opacity: 1;
-    /* Toon de hover afbeelding bij hover */
-}
-
-.image-container:hover .image-default {
-    opacity: 0;
-    /* Verberg de standaard afbeelding bij hover */
-}
-
-.over-foto {
-    display: flex;
-    gap: 119px;
-    justify-content: center;
-    align-items: center;
-    padding-right: 16em;
+.timebar {
+    width: 80vw;
 }
